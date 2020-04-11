@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title "DCDC Converter Topology"
 Date ""
 Rev ""
@@ -30,5 +30,11 @@ S 1150 1300 500  150
 U 5DFE5C5B
 F0 "BuckBoostConverter" 50
 F1 "BuckBoostConverter.sch" 50
+$EndSheet
+$Sheet
+S 2850 850  500  150 
+U 5E911967
+F0 "FlybackConverter" 50
+F1 "FlybackConverter.sch" 50
 $EndSheet
 $EndSCHEMATC

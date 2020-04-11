@@ -1,0 +1,212 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title "Flyback Converter"
+Date ""
+Rev ""
+Comp "COLEKMES"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Switch:SW_SPST SW?
+U 1 1 5E911AF2
+P 4450 2000
+F 0 "SW?" H 4450 2235 50  0000 C CNN
+F 1 "SW_SPST" H 4450 2144 50  0000 C CNN
+F 2 "" H 4450 2000 50  0001 C CNN
+F 3 "~" H 4450 2000 50  0001 C CNN
+	1    4450 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Transformer_1P_1S T?
+U 1 1 5E9126F9
+P 5150 2200
+F 0 "T?" H 5150 2581 50  0000 C CNN
+F 1 "Transformer_1P_1S" H 5150 2490 50  0000 C CNN
+F 2 "" H 5150 2200 50  0001 C CNN
+F 3 "~" H 5150 2200 50  0001 C CNN
+	1    5150 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D?
+U 1 1 5E913490
+P 5750 2000
+F 0 "D?" H 5750 2217 50  0000 C CNN
+F 1 "DIODE" H 5750 2126 50  0000 C CNN
+F 2 "" H 5750 2000 50  0001 C CNN
+F 3 "~" H 5750 2000 50  0001 C CNN
+F 4 "Y" H 5750 2000 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 5750 2000 50  0001 L CNN "Spice_Primitive"
+	1    5750 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E913854
+P 6000 2200
+F 0 "C?" H 6115 2246 50  0000 L CNN
+F 1 "C" H 6115 2155 50  0000 L CNN
+F 2 "" H 6038 2050 50  0001 C CNN
+F 3 "~" H 6000 2200 50  0001 C CNN
+	1    6000 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 2000 6000 2000
+Wire Wire Line
+	6000 2000 6000 2050
+Wire Wire Line
+	5600 2000 5550 2000
+Wire Wire Line
+	6000 2350 6000 2400
+Wire Wire Line
+	6000 2400 5550 2400
+Wire Wire Line
+	4650 2000 4750 2000
+Wire Wire Line
+	3950 2000 4250 2000
+Wire Wire Line
+	3950 2400 4750 2400
+$Comp
+L Device:Transformer_1P_1S T?
+U 1 1 5E91BB85
+P 5150 3100
+F 0 "T?" H 5150 3481 50  0000 C CNN
+F 1 "Transformer_1P_1S" H 5150 3390 50  0000 C CNN
+F 2 "" H 5150 3100 50  0001 C CNN
+F 3 "~" H 5150 3100 50  0001 C CNN
+	1    5150 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D?
+U 1 1 5E91BB8D
+P 5750 2900
+F 0 "D?" H 5750 3117 50  0000 C CNN
+F 1 "DIODE" H 5750 3026 50  0000 C CNN
+F 2 "" H 5750 2900 50  0001 C CNN
+F 3 "~" H 5750 2900 50  0001 C CNN
+F 4 "Y" H 5750 2900 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 5750 2900 50  0001 L CNN "Spice_Primitive"
+	1    5750 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E91BB93
+P 6000 3100
+F 0 "C?" H 6115 3146 50  0000 L CNN
+F 1 "C" H 6115 3055 50  0000 L CNN
+F 2 "" H 6038 2950 50  0001 C CNN
+F 3 "~" H 6000 3100 50  0001 C CNN
+	1    6000 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 2900 6000 2900
+Wire Wire Line
+	6000 2900 6000 2950
+Wire Wire Line
+	5600 2900 5550 2900
+Wire Wire Line
+	6000 3250 6000 3300
+Wire Wire Line
+	6000 3300 5550 3300
+Wire Wire Line
+	4650 2900 4750 2900
+Wire Wire Line
+	3950 2900 4250 2900
+Wire Wire Line
+	3950 3300 4750 3300
+$Comp
+L pspice:MNMOS M?
+U 1 1 5E91F57F
+P 4450 3000
+F 0 "M?" V 4875 3000 50  0000 C CNN
+F 1 "MNMOS" V 4784 3000 50  0000 C CNN
+F 2 "" H 4425 3000 50  0001 C CNN
+F 3 "~" H 4425 3000 50  0001 C CNN
+	1    4450 3000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4650 2800 4650 2900
+Connection ~ 4650 2900
+$Comp
+L Device:Transformer_1P_1S T?
+U 1 1 5E923773
+P 5150 3950
+F 0 "T?" H 5150 4331 50  0000 C CNN
+F 1 "Transformer_1P_1S" H 5150 4240 50  0000 C CNN
+F 2 "" H 5150 3950 50  0001 C CNN
+F 3 "~" H 5150 3950 50  0001 C CNN
+	1    5150 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D?
+U 1 1 5E92377B
+P 5750 3750
+F 0 "D?" H 5750 3967 50  0000 C CNN
+F 1 "DIODE" H 5750 3876 50  0000 C CNN
+F 2 "" H 5750 3750 50  0001 C CNN
+F 3 "~" H 5750 3750 50  0001 C CNN
+F 4 "Y" H 5750 3750 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 5750 3750 50  0001 L CNN "Spice_Primitive"
+	1    5750 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E923781
+P 6000 3950
+F 0 "C?" H 6115 3996 50  0000 L CNN
+F 1 "C" H 6115 3905 50  0000 L CNN
+F 2 "" H 6038 3800 50  0001 C CNN
+F 3 "~" H 6000 3950 50  0001 C CNN
+	1    6000 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3750 6000 3750
+Wire Wire Line
+	6000 3750 6000 3800
+Wire Wire Line
+	5600 3750 5550 3750
+Wire Wire Line
+	6000 4100 6000 4150
+Wire Wire Line
+	6000 4150 5550 4150
+$Comp
+L pspice:MNMOS M?
+U 1 1 5E92378F
+P 4550 4500
+F 0 "M?" V 4975 4500 50  0000 C CNN
+F 1 "MNMOS" V 4884 4500 50  0000 C CNN
+F 2 "" H 4525 4500 50  0001 C CNN
+F 3 "~" H 4525 4500 50  0001 C CNN
+	1    4550 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 4300 4650 4150
+Wire Wire Line
+	4650 4150 4750 4150
+Wire Wire Line
+	4650 4700 4750 4700
+Wire Wire Line
+	4650 4700 4650 4800
+Wire Wire Line
+	4650 4800 3950 4800
+Connection ~ 4650 4700
+Wire Wire Line
+	3950 3750 4750 3750
+$EndSCHEMATC
