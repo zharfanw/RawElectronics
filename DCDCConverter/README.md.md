@@ -1,6 +1,6 @@
 # Switch Mode Power Supply
 
-Power Su
+Power Supply Mode
 
 
 # Files
@@ -142,5 +142,5 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY1MDM1NTczXX0=
+eyJoaXN0b3J5IjpbLTExNTY4MDY4ODNdfQ==
 -->
