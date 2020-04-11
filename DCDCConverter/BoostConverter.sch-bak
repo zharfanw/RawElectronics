@@ -1,0 +1,234 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	4450 2150 4700 2150
+Wire Wire Line
+	4700 2250 4700 2150
+Connection ~ 4700 2150
+Wire Wire Line
+	4700 2150 4750 2150
+Wire Wire Line
+	5150 2150 5200 2150
+Wire Wire Line
+	5200 2150 5200 2300
+$Comp
+L power:GND #PWR?
+U 1 1 5DFE1605
+P 4700 3100
+F 0 "#PWR?" H 4700 2850 50  0001 C CNN
+F 1 "GND" H 4705 2927 50  0000 C CNN
+F 2 "" H 4700 3100 50  0001 C CNN
+F 3 "" H 4700 3100 50  0001 C CNN
+	1    4700 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2650 4700 2950
+Wire Wire Line
+	5200 2600 5200 2950
+Wire Wire Line
+	5200 2950 4700 2950
+Connection ~ 4700 2950
+Text HLabel 5450 2150 2    50   Input ~ 0
+LOAD+
+Wire Wire Line
+	5450 2150 5200 2150
+Connection ~ 5200 2150
+Text HLabel 5450 2950 2    50   Input ~ 0
+LOAD-
+Wire Wire Line
+	5450 2950 5200 2950
+Connection ~ 5200 2950
+Wire Wire Line
+	4000 2150 4150 2150
+Wire Wire Line
+	4700 2950 4700 3100
+Wire Wire Line
+	4000 2900 4000 2950
+Wire Wire Line
+	4000 2950 4700 2950
+Wire Wire Line
+	4000 2500 4000 2150
+$Comp
+L Simulation_SPICE:VDC V?
+U 1 1 5DFE2D0D
+P 4000 2700
+F 0 "V?" H 4130 2791 50  0001 L CNN
+F 1 "VDC" H 4130 2700 50  0000 L CNN
+F 2 "" H 4000 2700 50  0001 C CNN
+F 3 "~" H 4000 2700 50  0001 C CNN
+F 4 "Y" H 4000 2700 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 4000 2700 50  0001 L CNN "Spice_Primitive"
+F 6 "dc(1)" H 4130 2609 50  0001 L CNN "Spice_Model"
+	1    4000 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3700 4400 3700
+Wire Wire Line
+	4400 3850 4400 3700
+Connection ~ 4400 3700
+Wire Wire Line
+	4400 3700 4500 3700
+Wire Wire Line
+	4900 3700 5000 3700
+Wire Wire Line
+	5000 3700 5000 3900
+$Comp
+L power:GND #PWR?
+U 1 1 5E8EFF3F
+P 4400 4650
+F 0 "#PWR?" H 4400 4400 50  0001 C CNN
+F 1 "GND" H 4405 4477 50  0000 C CNN
+F 2 "" H 4400 4650 50  0001 C CNN
+F 3 "" H 4400 4650 50  0001 C CNN
+	1    4400 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 4250 4400 4500
+Wire Wire Line
+	5000 4200 5000 4500
+Wire Wire Line
+	5000 4500 4400 4500
+Connection ~ 4400 4500
+Text HLabel 5100 3700 2    50   Input ~ 0
+LOAD+
+Wire Wire Line
+	5100 3700 5000 3700
+Connection ~ 5000 3700
+Text HLabel 5100 4500 2    50   Input ~ 0
+LOAD-
+Wire Wire Line
+	5100 4500 5000 4500
+Connection ~ 5000 4500
+Wire Wire Line
+	4000 3700 4050 3700
+Wire Wire Line
+	4400 4500 4400 4650
+Wire Wire Line
+	4000 4250 4000 4500
+Wire Wire Line
+	4000 4500 4400 4500
+Wire Wire Line
+	4000 3850 4000 3700
+$Comp
+L Transistor_FET:IRF740 Q?
+U 1 1 5DFDE64A
+P 4600 2450
+F 0 "Q?" H 4804 2496 50  0001 L CNN
+F 1 "IRF740" H 4804 2405 50  0001 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4850 2375 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/91054/91054.pdf" H 4600 2450 50  0001 L CNN
+	1    4600 2450
+	1    0    0    -1  
+$EndComp
+Text HLabel 4350 2450 0    50   Input ~ 0
+Switch
+Wire Wire Line
+	4350 2450 4400 2450
+$Comp
+L pspice:DIODE D?
+U 1 1 5DFE0365
+P 4950 2150
+F 0 "D?" H 4950 2415 50  0001 C CNN
+F 1 "DIODE" H 4950 2324 50  0000 C CNN
+F 2 "" H 4950 2150 50  0001 C CNN
+F 3 "~" H 4950 2150 50  0001 C CNN
+	1    4950 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5DFDEE34
+P 4300 2150
+F 0 "L?" V 4490 2150 50  0001 C CNN
+F 1 "L" V 4399 2150 50  0000 C CNN
+F 2 "" H 4300 2150 50  0001 C CNN
+F 3 "~" H 4300 2150 50  0001 C CNN
+	1    4300 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DFE08AE
+P 5200 2450
+F 0 "C?" H 5318 2496 50  0001 L CNN
+F 1 "CP" H 5318 2405 50  0000 L CNN
+F 2 "" H 5238 2300 50  0001 C CNN
+F 3 "~" H 5200 2450 50  0001 C CNN
+	1    5200 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:DIODE D?
+U 1 1 5E8EFF2B
+P 4700 3700
+F 0 "D?" H 4700 3965 50  0001 C CNN
+F 1 "DIODE" H 4700 3874 50  0000 C CNN
+F 2 "" H 4700 3700 50  0001 C CNN
+F 3 "~" H 4700 3700 50  0001 C CNN
+	1    4700 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5E8EFF25
+P 4200 3700
+F 0 "L?" V 4390 3700 50  0001 C CNN
+F 1 "L" V 4299 3700 50  0000 C CNN
+F 2 "" H 4200 3700 50  0001 C CNN
+F 3 "~" H 4200 3700 50  0001 C CNN
+	1    4200 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW?
+U 1 1 5E8F1A57
+P 4400 4050
+F 0 "SW?" V 4354 4148 50  0001 L CNN
+F 1 "SW_SPST" V 4400 4148 50  0000 L CNN
+F 2 "" H 4400 4050 50  0001 C CNN
+F 3 "~" H 4400 4050 50  0001 C CNN
+	1    4400 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:VDC V?
+U 1 1 5E8EFF57
+P 4000 4050
+F 0 "V?" H 4130 4141 50  0001 L CNN
+F 1 "VDC" H 4130 4050 50  0000 L CNN
+F 2 "" H 4000 4050 50  0001 C CNN
+F 3 "~" H 4000 4050 50  0001 C CNN
+F 4 "Y" H 4000 4050 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 4000 4050 50  0001 L CNN "Spice_Primitive"
+F 6 "dc(1)" H 4130 3959 50  0001 L CNN "Spice_Model"
+	1    4000 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E914C29
+P 5000 4050
+F 0 "C?" H 5115 4096 50  0000 L CNN
+F 1 "C" H 5115 4005 50  0000 L CNN
+F 2 "" H 5038 3900 50  0001 C CNN
+F 3 "~" H 5000 4050 50  0001 C CNN
+	1    5000 4050
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

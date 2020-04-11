@@ -1,0 +1,186 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Simulation_SPICE:IDC I?
+U 1 1 5DD53FAF
+P 3350 3600
+F 0 "I?" H 3220 3509 50  0000 R CNN
+F 1 "IDC" H 3220 3600 50  0000 R CNN
+F 2 "" H 3350 3600 50  0001 C CNN
+F 3 "~" H 3350 3600 50  0001 C CNN
+F 4 "Y" H 3350 3600 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "I" H 3350 3600 50  0001 L CNN "Spice_Primitive"
+F 6 "dc(1)" H 3220 3691 50  0000 R CNN "Spice_Model"
+	1    3350 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:DIODE D?
+U 1 1 5DD5496E
+P 4200 3600
+F 0 "D?" V 4154 3728 50  0000 L CNN
+F 1 "DIODE" V 4245 3728 50  0000 L CNN
+F 2 "" H 4200 3600 50  0001 C CNN
+F 3 "~" H 4200 3600 50  0001 C CNN
+	1    4200 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3350 3400 3350 3200
+Wire Wire Line
+	3350 3200 4200 3200
+Wire Wire Line
+	4200 3200 4200 3400
+Wire Wire Line
+	3350 3800 3350 4000
+Wire Wire Line
+	3350 4000 4200 4000
+Wire Wire Line
+	4200 4000 4200 3800
+$Comp
+L Simulation_SPICE:IDC I?
+U 1 1 5DD56579
+P 5000 3600
+F 0 "I?" H 4870 3509 50  0000 R CNN
+F 1 "IDC" H 4870 3600 50  0000 R CNN
+F 2 "" H 5000 3600 50  0001 C CNN
+F 3 "~" H 5000 3600 50  0001 C CNN
+F 4 "Y" H 5000 3600 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "I" H 5000 3600 50  0001 L CNN "Spice_Primitive"
+F 6 "dc(1)" H 4870 3691 50  0000 R CNN "Spice_Model"
+	1    5000 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:DIODE D?
+U 1 1 5DD5657F
+P 5850 3600
+F 0 "D?" V 5804 3728 50  0000 L CNN
+F 1 "DIODE" V 5895 3728 50  0000 L CNN
+F 2 "" H 5850 3600 50  0001 C CNN
+F 3 "~" H 5850 3600 50  0001 C CNN
+	1    5850 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 3400 5000 3200
+Wire Wire Line
+	5000 3200 5850 3200
+Wire Wire Line
+	5850 3200 5850 3400
+Wire Wire Line
+	5000 3800 5000 4000
+Wire Wire Line
+	5000 4000 5850 4000
+Wire Wire Line
+	5850 4000 5850 3800
+$Comp
+L Device:R R?
+U 1 1 5DD56A5A
+P 6400 3200
+F 0 "R?" V 6193 3200 50  0000 C CNN
+F 1 "R" V 6284 3200 50  0000 C CNN
+F 2 "" V 6330 3200 50  0001 C CNN
+F 3 "~" H 6400 3200 50  0001 C CNN
+	1    6400 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6250 3200 5850 3200
+Connection ~ 5850 3200
+Wire Wire Line
+	5850 4000 6850 4000
+Connection ~ 5850 4000
+Wire Wire Line
+	6550 3200 6850 3200
+$Comp
+L Simulation_SPICE:IDC I?
+U 1 1 5DD58288
+P 7200 3600
+F 0 "I?" H 7070 3509 50  0000 R CNN
+F 1 "IDC" H 7070 3600 50  0000 R CNN
+F 2 "" H 7200 3600 50  0001 C CNN
+F 3 "~" H 7200 3600 50  0001 C CNN
+F 4 "Y" H 7200 3600 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "I" H 7200 3600 50  0001 L CNN "Spice_Primitive"
+F 6 "dc(1)" H 7070 3691 50  0000 R CNN "Spice_Model"
+	1    7200 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:DIODE D?
+U 1 1 5DD5828E
+P 8050 3600
+F 0 "D?" V 8004 3728 50  0000 L CNN
+F 1 "DIODE" V 8095 3728 50  0000 L CNN
+F 2 "" H 8050 3600 50  0001 C CNN
+F 3 "~" H 8050 3600 50  0001 C CNN
+	1    8050 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7200 3400 7200 3200
+Wire Wire Line
+	7200 3200 8050 3200
+Wire Wire Line
+	8050 3200 8050 3400
+Wire Wire Line
+	7200 3800 7200 4000
+Wire Wire Line
+	7200 4000 8050 4000
+Wire Wire Line
+	8050 4000 8050 3800
+$Comp
+L Device:R R?
+U 1 1 5DD5829A
+P 8800 3200
+F 0 "R?" V 8593 3200 50  0000 C CNN
+F 1 "R" V 8684 3200 50  0000 C CNN
+F 2 "" V 8730 3200 50  0001 C CNN
+F 3 "~" H 8800 3200 50  0001 C CNN
+	1    8800 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8650 3200 8550 3200
+Connection ~ 8050 3200
+Wire Wire Line
+	8050 4000 8550 4000
+Connection ~ 8050 4000
+Wire Wire Line
+	8950 3200 9250 3200
+$Comp
+L Device:R R?
+U 1 1 5DD5A0FD
+P 8550 3550
+F 0 "R?" H 8480 3504 50  0000 R CNN
+F 1 "R" H 8480 3595 50  0000 R CNN
+F 2 "" V 8480 3550 50  0001 C CNN
+F 3 "~" H 8550 3550 50  0001 C CNN
+	1    8550 3550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8550 3400 8550 3200
+Connection ~ 8550 3200
+Wire Wire Line
+	8550 3200 8050 3200
+Wire Wire Line
+	8550 3700 8550 4000
+Connection ~ 8550 4000
+Wire Wire Line
+	8550 4000 9250 4000
+$EndSCHEMATC

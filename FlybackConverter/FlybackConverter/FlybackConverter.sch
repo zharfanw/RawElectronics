@@ -1,0 +1,129 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Transformer_1P_1S T?
+U 1 1 5E1B3AFD
+P 4550 2150
+F 0 "T?" H 4550 2531 50  0000 C CNN
+F 1 "Transformer_1P_1S" H 4550 2440 50  0000 C CNN
+F 2 "" H 4550 2150 50  0001 C CNN
+F 3 "~" H 4550 2150 50  0001 C CNN
+	1    4550 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BS108 Q?
+U 1 1 5E1B4684
+P 3950 2850
+F 0 "Q?" H 4154 2896 50  0000 L CNN
+F 1 "BS108" H 4154 2805 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4150 2775 50  0001 L CIN
+F 3 "http://www.redrok.com/MOSFET_BS108_200V_250mA_8O_Vth1.5_TO-92.PDF" H 3950 2850 50  0001 L CNN
+	1    3950 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 2650 4050 2350
+Wire Wire Line
+	4050 2350 4150 2350
+Text HLabel 3350 2850 0    50   Input ~ 0
+Gate
+Wire Wire Line
+	3350 2850 3750 2850
+$Comp
+L power:+VDC #PWR?
+U 1 1 5E1B55F0
+P 3400 1800
+F 0 "#PWR?" H 3400 1700 50  0001 C CNN
+F 1 "+VDC" H 3400 2075 50  0000 C CNN
+F 2 "" H 3400 1800 50  0001 C CNN
+F 3 "" H 3400 1800 50  0001 C CNN
+	1    3400 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 1800 3400 1950
+Wire Wire Line
+	3400 1950 4150 1950
+$Comp
+L power:GND #PWR?
+U 1 1 5E1B6732
+P 4050 3300
+F 0 "#PWR?" H 4050 3050 50  0001 C CNN
+F 1 "GND" H 4055 3127 50  0000 C CNN
+F 2 "" H 4050 3300 50  0001 C CNN
+F 3 "" H 4050 3300 50  0001 C CNN
+	1    4050 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 3300 4050 3050
+$Comp
+L Device:D D?
+U 1 1 5E1B6F73
+P 5500 1950
+F 0 "D?" H 5500 1734 50  0000 C CNN
+F 1 "D" H 5500 1825 50  0000 C CNN
+F 2 "" H 5500 1950 50  0001 C CNN
+F 3 "~" H 5500 1950 50  0001 C CNN
+	1    5500 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5E1B7397
+P 5950 2150
+F 0 "C?" H 6068 2196 50  0000 L CNN
+F 1 "CP" H 6068 2105 50  0000 L CNN
+F 2 "" H 5988 2000 50  0001 C CNN
+F 3 "~" H 5950 2150 50  0001 C CNN
+	1    5950 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E1B770A
+P 6400 2150
+F 0 "R?" H 6470 2196 50  0000 L CNN
+F 1 "R" H 6470 2105 50  0000 L CNN
+F 2 "" V 6330 2150 50  0001 C CNN
+F 3 "~" H 6400 2150 50  0001 C CNN
+	1    6400 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 1950 5950 1950
+Wire Wire Line
+	6400 1950 6400 2000
+Wire Wire Line
+	5950 2000 5950 1950
+Connection ~ 5950 1950
+Wire Wire Line
+	5950 1950 6400 1950
+Wire Wire Line
+	5350 1950 4950 1950
+Wire Wire Line
+	4950 2350 4950 2500
+Wire Wire Line
+	4950 2500 5950 2500
+Wire Wire Line
+	6400 2500 6400 2300
+Wire Wire Line
+	5950 2300 5950 2500
+Connection ~ 5950 2500
+Wire Wire Line
+	5950 2500 6400 2500
+$EndSCHEMATC

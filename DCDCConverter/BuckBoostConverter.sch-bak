@@ -1,0 +1,471 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Simulation_SPICE:VDC V?
+U 1 1 5E921A3D
+P 700 1250
+F 0 "V?" H 830 1341 50  0000 L CNN
+F 1 "VDC" H 830 1250 50  0000 L CNN
+F 2 "" H 700 1250 50  0001 C CNN
+F 3 "~" H 700 1250 50  0001 C CNN
+F 4 "Y" H 700 1250 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 700 1250 50  0001 L CNN "Spice_Primitive"
+F 6 "dc(1)" H 830 1159 50  0000 L CNN "Spice_Model"
+	1    700  1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW?
+U 1 1 5E92328F
+P 950 900
+F 0 "SW?" H 950 1135 50  0000 C CNN
+F 1 "SW_SPST" H 950 1044 50  0000 C CNN
+F 2 "" H 950 900 50  0001 C CNN
+F 3 "~" H 950 900 50  0001 C CNN
+	1    950  900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	750  900  700  900 
+Wire Wire Line
+	700  900  700  1050
+$Comp
+L pspice:DIODE D?
+U 1 1 5E925116
+P 1200 1200
+F 0 "D?" V 1246 1072 50  0000 R CNN
+F 1 "DIODE" V 1155 1072 50  0000 R CNN
+F 2 "" H 1200 1200 50  0001 C CNN
+F 3 "~" H 1200 1200 50  0001 C CNN
+	1    1200 1200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1150 900  1200 900 
+Wire Wire Line
+	1200 900  1200 1000
+$Comp
+L pspice:INDUCTOR L?
+U 1 1 5E9282A8
+P 1500 900
+F 0 "L?" H 1500 1115 50  0000 C CNN
+F 1 "INDUCTOR" H 1500 1024 50  0000 C CNN
+F 2 "" H 1500 900 50  0001 C CNN
+F 3 "~" H 1500 900 50  0001 C CNN
+	1    1500 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 900  1200 900 
+Connection ~ 1200 900 
+$Comp
+L Switch:SW_SPST SW?
+U 1 1 5E92CA98
+P 1850 1150
+F 0 "SW?" V 1804 1248 50  0000 L CNN
+F 1 "SW_SPST" V 1895 1248 50  0000 L CNN
+F 2 "" H 1850 1150 50  0001 C CNN
+F 3 "~" H 1850 1150 50  0001 C CNN
+	1    1850 1150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1750 900  1850 900 
+Wire Wire Line
+	1850 900  1850 950 
+$Comp
+L pspice:DIODE D?
+U 1 1 5E92E875
+P 2100 900
+F 0 "D?" H 2100 1165 50  0000 C CNN
+F 1 "DIODE" H 2100 1074 50  0000 C CNN
+F 2 "" H 2100 900 50  0001 C CNN
+F 3 "~" H 2100 900 50  0001 C CNN
+	1    2100 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 900  1850 900 
+Connection ~ 1850 900 
+$Comp
+L pspice:C C?
+U 1 1 5E938828
+P 2450 1200
+F 0 "C?" H 2628 1246 50  0000 L CNN
+F 1 "C" H 2628 1155 50  0000 L CNN
+F 2 "" H 2450 1200 50  0001 C CNN
+F 3 "~" H 2450 1200 50  0001 C CNN
+	1    2450 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 900  2450 900 
+Wire Wire Line
+	2450 900  2450 950 
+Wire Wire Line
+	700  1450 700  1550
+Wire Wire Line
+	700  1550 1200 1550
+Wire Wire Line
+	2450 1550 2450 1450
+Wire Wire Line
+	1200 1400 1200 1550
+Connection ~ 1200 1550
+Wire Wire Line
+	1200 1550 1850 1550
+Wire Wire Line
+	1850 1350 1850 1550
+Connection ~ 1850 1550
+Wire Wire Line
+	1850 1550 2450 1550
+Text HLabel 2650 900  2    50   Input ~ 0
+LOAD+
+Text HLabel 2650 1550 2    50   Input ~ 0
+LOAD-
+Wire Wire Line
+	2650 900  2450 900 
+Connection ~ 2450 900 
+Wire Wire Line
+	2650 1550 2450 1550
+Connection ~ 2450 1550
+$Comp
+L Simulation_SPICE:VDC V?
+U 1 1 5E9467C7
+P 700 2400
+F 0 "V?" H 830 2491 50  0000 L CNN
+F 1 "VDC" H 830 2400 50  0000 L CNN
+F 2 "" H 700 2400 50  0001 C CNN
+F 3 "~" H 700 2400 50  0001 C CNN
+F 4 "Y" H 700 2400 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 700 2400 50  0001 L CNN "Spice_Primitive"
+F 6 "dc(1)" H 830 2309 50  0000 L CNN "Spice_Model"
+	1    700  2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 2050 700  2050
+Wire Wire Line
+	700  2050 700  2200
+$Comp
+L pspice:DIODE D?
+U 1 1 5E9467D5
+P 1500 2350
+F 0 "D?" V 1546 2222 50  0000 R CNN
+F 1 "DIODE" V 1455 2222 50  0000 R CNN
+F 2 "" H 1500 2350 50  0001 C CNN
+F 3 "~" H 1500 2350 50  0001 C CNN
+	1    1500 2350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1450 2050 1500 2050
+Wire Wire Line
+	1500 2050 1500 2150
+$Comp
+L pspice:INDUCTOR L?
+U 1 1 5E9467DD
+P 1950 2050
+F 0 "L?" H 1950 2265 50  0000 C CNN
+F 1 "INDUCTOR" H 1950 2174 50  0000 C CNN
+F 2 "" H 1950 2050 50  0001 C CNN
+F 3 "~" H 1950 2050 50  0001 C CNN
+	1    1950 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 2050 1500 2050
+Connection ~ 1500 2050
+Wire Wire Line
+	2200 2050 2400 2050
+Wire Wire Line
+	2400 2050 2400 2100
+$Comp
+L pspice:DIODE D?
+U 1 1 5E9467ED
+P 2650 2050
+F 0 "D?" H 2650 2315 50  0000 C CNN
+F 1 "DIODE" H 2650 2224 50  0000 C CNN
+F 2 "" H 2650 2050 50  0001 C CNN
+F 3 "~" H 2650 2050 50  0001 C CNN
+	1    2650 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 2050 2400 2050
+Connection ~ 2400 2050
+$Comp
+L pspice:C C?
+U 1 1 5E9467F5
+P 3000 2350
+F 0 "C?" H 3178 2396 50  0000 L CNN
+F 1 "C" H 3178 2305 50  0000 L CNN
+F 2 "" H 3000 2350 50  0001 C CNN
+F 3 "~" H 3000 2350 50  0001 C CNN
+	1    3000 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 2050 3000 2050
+Wire Wire Line
+	3000 2050 3000 2100
+Wire Wire Line
+	700  2600 700  2700
+Wire Wire Line
+	700  2700 1500 2700
+Wire Wire Line
+	3000 2700 3000 2600
+Wire Wire Line
+	1500 2550 1500 2700
+Connection ~ 1500 2700
+Wire Wire Line
+	1500 2700 2400 2700
+Wire Wire Line
+	2400 2500 2400 2700
+Connection ~ 2400 2700
+Wire Wire Line
+	2400 2700 3000 2700
+Text HLabel 3200 2050 2    50   Input ~ 0
+LOAD+
+Text HLabel 3200 2700 2    50   Input ~ 0
+LOAD-
+Wire Wire Line
+	3200 2050 3000 2050
+Connection ~ 3000 2050
+Wire Wire Line
+	3200 2700 3000 2700
+Connection ~ 3000 2700
+$Comp
+L pspice:MNMOS M?
+U 1 1 5E9482BF
+P 1250 2150
+F 0 "M?" V 1675 2150 50  0000 C CNN
+F 1 "MNMOS" V 1584 2150 50  0000 C CNN
+F 2 "" H 1225 2150 50  0001 C CNN
+F 3 "~" H 1225 2150 50  0001 C CNN
+	1    1250 2150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1450 1950 1500 1950
+Wire Wire Line
+	1500 1950 1500 2050
+$Comp
+L pspice:MNMOS M?
+U 1 1 5E95D14E
+P 2300 2300
+F 0 "M?" H 2588 2346 50  0000 L CNN
+F 1 "MNMOS" H 2588 2255 50  0000 L CNN
+F 2 "" H 2275 2300 50  0001 C CNN
+F 3 "~" H 2275 2300 50  0001 C CNN
+	1    2300 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 2500 2400 2500
+Connection ~ 2400 2500
+$Comp
+L Simulation_SPICE:VDC V?
+U 1 1 5E982064
+P 700 3650
+F 0 "V?" H 830 3741 50  0000 L CNN
+F 1 "VDC" H 830 3650 50  0000 L CNN
+F 2 "" H 700 3650 50  0001 C CNN
+F 3 "~" H 700 3650 50  0001 C CNN
+F 4 "Y" H 700 3650 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 700 3650 50  0001 L CNN "Spice_Primitive"
+F 6 "dc(1)" H 830 3559 50  0000 L CNN "Spice_Model"
+	1    700  3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW?
+U 1 1 5E982570
+P 950 3350
+F 0 "SW?" H 950 3585 50  0000 C CNN
+F 1 "SW_SPST" H 950 3494 50  0000 C CNN
+F 2 "" H 950 3350 50  0001 C CNN
+F 3 "~" H 950 3350 50  0001 C CNN
+	1    950  3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	750  3350 700  3350
+Wire Wire Line
+	700  3350 700  3450
+$Comp
+L pspice:INDUCTOR L?
+U 1 1 5E98C1EA
+P 1250 3650
+F 0 "L?" V 1204 3728 50  0000 L CNN
+F 1 "INDUCTOR" V 1295 3728 50  0000 L CNN
+F 2 "" H 1250 3650 50  0001 C CNN
+F 3 "~" H 1250 3650 50  0001 C CNN
+	1    1250 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1250 3350 1250 3400
+$Comp
+L pspice:DIODE D?
+U 1 1 5E9917C2
+P 1550 3350
+F 0 "D?" H 1550 3085 50  0000 C CNN
+F 1 "DIODE" H 1550 3176 50  0000 C CNN
+F 2 "" H 1550 3350 50  0001 C CNN
+F 3 "~" H 1550 3350 50  0001 C CNN
+	1    1550 3350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1150 3350 1250 3350
+Connection ~ 1250 3350
+Wire Wire Line
+	1250 3350 1350 3350
+$Comp
+L pspice:C C?
+U 1 1 5E996B37
+P 1900 3650
+F 0 "C?" H 2078 3696 50  0000 L CNN
+F 1 "C" H 2078 3605 50  0000 L CNN
+F 2 "" H 1900 3650 50  0001 C CNN
+F 3 "~" H 1900 3650 50  0001 C CNN
+	1    1900 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 3350 1900 3350
+Wire Wire Line
+	1900 3350 1900 3400
+Wire Wire Line
+	700  3850 700  4000
+Wire Wire Line
+	700  4000 1250 4000
+Wire Wire Line
+	1900 4000 1900 3900
+Wire Wire Line
+	1250 3900 1250 4000
+Connection ~ 1250 4000
+Wire Wire Line
+	1250 4000 1900 4000
+Text HLabel 2100 3350 2    50   Input ~ 0
+LOAD-
+Text HLabel 2100 4000 2    50   Input ~ 0
+LOAD+
+Wire Wire Line
+	2100 3350 1900 3350
+Connection ~ 1900 3350
+Wire Wire Line
+	2100 4000 1900 4000
+Connection ~ 1900 4000
+$Comp
+L Simulation_SPICE:VDC V?
+U 1 1 5E9B0E54
+P 700 4850
+F 0 "V?" H 830 4941 50  0000 L CNN
+F 1 "VDC" H 830 4850 50  0000 L CNN
+F 2 "" H 700 4850 50  0001 C CNN
+F 3 "~" H 700 4850 50  0001 C CNN
+F 4 "Y" H 700 4850 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 700 4850 50  0001 L CNN "Spice_Primitive"
+F 6 "dc(1)" H 830 4759 50  0000 L CNN "Spice_Model"
+	1    700  4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  4550 700  4550
+Wire Wire Line
+	700  4550 700  4650
+$Comp
+L pspice:INDUCTOR L?
+U 1 1 5E9B0E62
+P 1450 4850
+F 0 "L?" V 1404 4928 50  0000 L CNN
+F 1 "INDUCTOR" V 1495 4928 50  0000 L CNN
+F 2 "" H 1450 4850 50  0001 C CNN
+F 3 "~" H 1450 4850 50  0001 C CNN
+	1    1450 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1450 4550 1450 4600
+$Comp
+L pspice:DIODE D?
+U 1 1 5E9B0E69
+P 1750 4550
+F 0 "D?" H 1750 4285 50  0000 C CNN
+F 1 "DIODE" H 1750 4376 50  0000 C CNN
+F 2 "" H 1750 4550 50  0001 C CNN
+F 3 "~" H 1750 4550 50  0001 C CNN
+	1    1750 4550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1350 4550 1450 4550
+Connection ~ 1450 4550
+Wire Wire Line
+	1450 4550 1550 4550
+$Comp
+L pspice:C C?
+U 1 1 5E9B0E72
+P 2100 4850
+F 0 "C?" H 2278 4896 50  0000 L CNN
+F 1 "C" H 2278 4805 50  0000 L CNN
+F 2 "" H 2100 4850 50  0001 C CNN
+F 3 "~" H 2100 4850 50  0001 C CNN
+	1    2100 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 4550 2100 4550
+Wire Wire Line
+	2100 4550 2100 4600
+Wire Wire Line
+	700  5050 700  5200
+Wire Wire Line
+	700  5200 1450 5200
+Wire Wire Line
+	2100 5200 2100 5100
+Wire Wire Line
+	1450 5100 1450 5200
+Connection ~ 1450 5200
+Wire Wire Line
+	1450 5200 2100 5200
+Text HLabel 2300 4550 2    50   Input ~ 0
+LOAD-
+Text HLabel 2300 5200 2    50   Input ~ 0
+LOAD+
+Wire Wire Line
+	2300 4550 2100 4550
+Connection ~ 2100 4550
+Wire Wire Line
+	2300 5200 2100 5200
+Connection ~ 2100 5200
+$Comp
+L pspice:MNMOS M?
+U 1 1 5E9B4017
+P 1150 4650
+F 0 "M?" V 1575 4650 50  0000 C CNN
+F 1 "MNMOS" V 1484 4650 50  0000 C CNN
+F 2 "" H 1125 4650 50  0001 C CNN
+F 3 "~" H 1125 4650 50  0001 C CNN
+	1    1150 4650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1350 4450 1450 4450
+Wire Wire Line
+	1450 4450 1450 4550
+$EndSCHEMATC
